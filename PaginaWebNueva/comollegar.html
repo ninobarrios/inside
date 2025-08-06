@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to get there?</title>
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1929/1929693.png">
+
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7519552983128815"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="portadacm">
+            <h2>How to get there?</h2>
+        </div>
+
+    </header>
+    <nav class="navbar">
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <ul id="navbarMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comollegar.html">How to get there?</a></li>
+            <li><a href="destinos.html">Destinations</a></li>
+            <li><a href="actividades.html">Activities</a></li>
+            <li><a href="consejos.html">Tips</a></li>
+        </ul>
+    </nav>
+
+    <section class="cabeceracl">
+        <h2> Arequipa - Chivay</h2>
+        <div class="clgroup">
+            <div class="clgroup_left">
+                <div id="map" style="height: 400px;"></div>
+                <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+                <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+                <script>
+                    const map = L.map('map').setView([-16.423004, -71.544452], 10);
+
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+
+                    const arequipa = L.latLng(-16.423004, -71.544452);
+                    const chivay = L.latLng(-15.638762, -71.600755);
+
+                    const customIcon = L.icon({
+                        iconUrl: 'https://cdn-icons-png.flaticon.com/512/3699/3699580.png', // Cambia el ícono de los marcadores
+                        iconSize: [32, 32],
+                        iconAnchor: [16, 32],
+                        popupAnchor: [0, -32]
+                    });
+
+                    L.marker(arequipa, { icon: customIcon }).addTo(map).bindPopup('Arequipa');
+
+                    L.marker(chivay, { icon: customIcon }).addTo(map).bindPopup('Chivay');
+
+                    const control = L.Routing.control({
+                        waypoints: [
+                            arequipa,
+                            chivay
+                        ],
+                        routeWhileDragging: false,
+                        show: false,
+                        createMarker: function (i, waypoint, n) {
+                            return L.marker(waypoint.latLng, {
+                                icon: customIcon
+                            });
+                        },
+                        lineOptions: {
+                            styles: [{ color: '#47b72f', weight: 4 }]
+                        }
+                    }).addTo(map);
+
+                    control.on('routesfound', function (e) {
+                        const bounds = L.latLngBounds(arequipa, chivay);
+                        map.fitBounds(bounds);
+                    });
+                </script>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <p class="dtlp">The Colca Canyon is one of the most impressive tourist destinations in Peru, famous for its natural
+        beauty, spectacular landscapes, and the opportunity to spot condors. Below, I detail the different ways to get
+        there and some tips to make the most of your visit. The Colca Canyon is located in the Arequipa region,
+        approximately 160 kilometers north of the city of Arequipa. The most common way to get there is from this city.
+    </p>
+
+    <div class="cmlg">
+        <section class="sctctn">
+            <h2 class="clh2">From Arequipa</h2>
+            <div class="dsdaqp">
+                <div class="dsdaqpctn">
+                    <h3>Bus Transportation</h3>
+                    <p>The most common and economical way to get to the Colca Canyon is by bus. <strong>Departing from the Arequipa bus terminal</strong>, here’s how:</p>
+                    <br>
+
+                    <p><strong>Ticket Purchase:</strong></p>
+                    <p><strong>Where:</strong> You can purchase tickets at the Arequipa bus
+                        terminal (Terminal Terrestre).</p>
+                    <p><strong>Recommended Companies:</strong></p>
+                    <li><strong>Trasandino:</strong> Specialized in routes to Colca, ideal for
+                        direct trips.</li>
+                    <li><strong>Reyna:</strong> Specialized in routes to Colca, ideal for direct
+                        trips.</li>
+                    <li><strong>Milagros:</strong> Specialized in routes to Colca, ideal for
+                        direct trips.</li>
+
+                    <p><strong>Schedules and Rates:</strong></p>
+                    <p>Buses typically depart between 1:00am and 1:00pm, and ticket prices range between S/.30 and S/.25
+                        soles.</p>
+                    <p>It is recommended to purchase tickets in advance, especially during the high season.</p><br>
+
+                    <p><strong>Travel Duration:</strong> These routes depart from Arequipa, passing through Chivay,
+                        Yanque, Macca, Pinchollo, Cruz del Condor, and finally Cabanconde. The trip takes approximately
+                        6 hours, depending on traffic and stops.</p>
+                </div>
+
+
+
+                <div class="dsdaqpctn">
+                    <h3>Guided Tour</h3>
+                    <p>If you prefer a more complete experience, consider a guided tour that includes transportation and
+                        additional activities.</p>
+
+                    <p><strong>Benefits:</strong> Tours usually include stops at points of interest such as the Cruz del
+                        Cóndor viewpoint, and sometimes include lunches.</p>
+                    <p><strong>Duration:</strong> These are typically one-day tours, although there are two-day options
+                        that include an overnight stay in Chivay.</p>
+                    <p><strong>Prices:</strong> Prices vary, but a one-day tour can cost between S/. 100 and S/. 200 per
+                        person, including transportation and lunch.</p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="sctctn">
+            <h2 class="clh2">By Car</h2>
+            <div class="dsdaqpch">
+
+                <article>
+                    <h3>Car Rental</h3>
+                    <p>Renting a car is an excellent option if you prefer to travel at your own pace. Here are some
+                        tips:</p><br>
+                    <ul>
+                        <p><strong>Recommended Route:</strong> From Arequipa, take the road towards <em>Yura</em>, then
+                            head towards <em>Pampa Canahuas</em> and continue to <em>Chivay</em>, the gateway to the
+                            Colca Canyon.</p>
+                        <p><strong>Distance:</strong> Approximately 150 km (93 miles), which takes between 3 and 4
+                            hours, depending on road conditions.</p>
+                        <p><strong>Driving Tips:</strong> The roads can be winding and mountainous. Drive carefully and
+                            be aware that the weather can change rapidly.</p>
+                    </ul><br>
+                    <p>Make sure to have enough fuel, as gas stations are scarce along the way.</p>
+                </article>
+            </div>
+
+
+        </section>
+
+        <section class="sctctn">
+
+            <h2 class="clh2">Alternative Transportation Options</h2>
+            <div class="dsdaqp">
+
+                <div class="dsdaqpctn">
+
+                    <article>
+                        <h3>Taxi or Private Transport Service</h3>
+                        <p>Another option is to hire a taxi or a private transport service. Here are some points to
+                            consider:</p><br>
+                        <ul>
+                            <p><strong>Costs:</strong> It can cost between S/. 300 and S/. 500, depending on the
+                                negotiation and the service.</p>
+                            <p><strong>Duration:</strong> Similar to the bus journey, between 3 and 4 hours.</p>
+                        </ul>
+                        <p>This option might be advisable if you're traveling in a group.</p>
+                    </article>
+                </div>
+
+                <div class="dsdaqpctn">
+
+                    <article>
+                        <h3>Local Public Transport</h3>
+                        <p>There are minivans or shared taxis that go from Arequipa to Chivay. They depart from the bus
+                            terminal or private terminals of the company, usually around the bus station area.</p><br>
+                        <ul>
+                            <p><strong>Frequency:</strong> They usually depart every half hour or hour, depending on
+                                demand.</p>
+                            <p><strong>Duration:</strong> Approximately 3 hours.</p>
+                        </ul><br>
+                        <p>The final stop is the bus terminal in Chivay, from where you can find shared taxis to various
+                            districts of the Colca Canyon, with very affordable prices.</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="consejos-utiles" style="margin-bottom: 100px;">
+            <h2 class="clh2">Useful Tips</h2>
+            <div class="dsdaqpch">
+
+                <ul>
+                    <p><strong>Acclimatization:</strong> The Colca Canyon is located at a considerable altitude. It is
+                        recommended to acclimatize in Arequipa before traveling, or bring medication to help control
+                        altitude sickness.</p>
+                    <p><strong>Reservations:</strong> Make reservations in advance for buses or tours, especially during
+                        high season.</p>
+                    <p><strong>Food and Water:</strong> Bring water and snacks, as some areas may not have nearby
+                        stores.</p>
+                    <p><strong>Money:</strong> Try to carry cash, as many places may not accept cards or mobile payment
+                        apps.</p>
+                    <p><strong>Plan Stops:</strong> Don't hesitate to stop at the viewpoints and towns along the way.
+                        Each stop can offer you a unique and enriching experience.</p>
+                </ul>
+            </div>
+
+        </section>
+
+
+    </div>
+    <div class="ftg_cl">
+        <h2 class="clh2" style="text-align: center; margin-top: 100px;">Tourist Stops</h2>
+        <div class="division" style="margin: 25px 45vw;"></div>
+        <p class="dcrftg_cl">Along the road from Arequipa to the Colca Canyon, you will find a variety of tourist
+            attractions that will enhance your experience. This route offers you the opportunity to discover an abundant
+            diversity of flora and fauna, as well as breathtaking landscapes. Each stop will surprise you with unique
+            and charming views. It is not only a journey to an impressive destination but an invitation to explore the
+            natural and cultural beauty of the region. Take the time to stop, enjoy the local charms, and interact with
+            the community.</p>
+
+        <div class="gall_ftg_cl">
+            <div class="img_gall_ftg_cl">
+                <img src="https://muniyanahuara.gob.pe/wp-content/uploads/2020/12/CAN%CC%83AHUAS_11075269.jpg" alt="">
+                <h4>Pampa Cañahuas</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/05/8a/f7/5f/colca-lodge-spa-hot-springs.jpg"
+                    alt="">
+                <h4>Alpaca Breeders</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/eb/50/19/san-miguel-viewpoint.jpg" alt="">
+                <h4>Volcanoes Lookout</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img style="height: 333px !important;"
+                    src="https://media-cdn.tripadvisor.com/media/photo-s/18/62/b4/2c/la-route-entre-chivay.jpg" alt="">
+                <h4>Landscapes</h4>
+            </div>
+
+            <div class="img_gall_ftg_cl">
+                <img src="https://images.unsplash.com/photo-1623610298716-6a559d7577d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h4>Snow-capped mountains</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://images.unsplash.com/photo-1663188783030-1206a3226345?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h4>Viewpoints</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://images.unsplash.com/photo-1685579078024-6bedd1d95c72?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h4>Maca Town</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://terandes.com/wp-content/uploads/2023/01/Condor-del-Colca-1-900x675.webp" alt="">
+                <h4>Condor Cross</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://freewalkingtoursperu.com/wp-content/uploads/2024/02/como-llegar-canon-colca_3.webp"
+                    alt="">
+                <h4>Canyon</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://www.viajandoporelmundomundial.com/wp-content/uploads/2024/04/bailes-colca-peru.jpg"
+                    alt="">
+                <h4>Town of Yanque</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://www.machupicchuterra.com/wp-content/uploads/volcan-sabancaya-full.jpg" alt="">
+                <h4>Volcanoes</h4>
+            </div>
+            <div class="img_gall_ftg_cl">
+                <img src="https://i.pinimg.com/564x/da/db/7b/dadb7bbc249e684ca8dcd9857991cdfb.jpg" alt="">
+                <h4>Crafts</h4>
+            </div>
+        </div>
+        <div>
+            <div class="diffapp" style="margin-top: 150px;">
+
+                <h2 class="clh2 centeralin">Cruz del Cóndor Viewpoint</h2>
+                <p class="dcrftg_cl">Experience: Imagine being in the heart of the Andes, with fresh air and the clear
+                    sky above you. From the <strong>Cruz del Cóndor Viewpoint</strong>, you will witness one of nature's
+                    most majestic flights. The Andean condor, the largest flying bird in the world, unfolds before your
+                    eyes in a unique spectacle. Additionally, the <strong>Colca Canyon</strong> stretches beneath your
+                    feet, revealing its astonishing depth, leaving an indelible mark on your memory. A place where the
+                    grandeur of nature will take your breath away!</p>
+
+            </div>
+
+            <h2 class="clh2 centeralin">Misti Volcano (Arequipa)</h2>
+            <p class="dcrftg_cl">Experience: The <strong>Misti Volcano</strong> is much more than an imposing mountain;
+                it is a challenge for adventurers from all over the world. Imagine ascending its slopes, facing the
+                challenge as the landscape changes around you. And when you reach the summit, a panoramic view of
+                <strong>Arequipa</strong> and its valleys will reward you with a unique sense of achievement. A
+                destination for those seeking adventure, adrenaline, and views that only the brave can conquer!
+            </p>
+            <div class="diffapp">
+
+                <h2 class="clh2 centeralin">Yanque Village</h2>
+                <p class="dcrftg_cl">Experience: In <strong>Yanque</strong>, time seems to stand still. This picturesque
+                    village, surrounded by green landscapes and imposing mountains, invites you to immerse yourself in a
+                    world full of ancestral traditions. Experience the <strong>pre-Inca agricultural terraces</strong>
+                    and let yourself be enveloped by the joy of the <strong>Danzarina de Yanque dance</strong>. Here,
+                    the warmth of the people and the living traditions will make you feel like part of this vibrant
+                    community. A true connection with Andean culture!</p>
+
+            </div>
+
+            <h2 class="clh2 centeralin">Maca Village</h2>
+            <p class="dcrftg_cl">Experience: In <strong>Maca Village</strong>, history and culture are lived in every
+                corner. Admire its colonial church while the echoes of <strong>folk dances</strong> like the "Huayno"
+                surround you in a festive and colorful atmosphere. Religious festivals and rural life will allow you to
+                discover an authentic way of life, where tradition remains alive in every step. A place where faith,
+                music, and customs merge to offer a unique experience!</p>
+
+
+                <div class="diffapp">
+                    <h2 class="clh2 centeralin">Pata Pampa Viewpoint</h2>
+                    <p class="dcrftg_cl">Experience: At the <strong>Pata Pampa Viewpoint</strong>, more than 4,800 meters above sea level, you will feel like the sky is closer. The <strong>volcanic chain</strong>, including <strong>Sabancaya</strong> and <strong>Ampato</strong>, rises imposingly before you, while the fresh air of the heights fills your lungs. This is the perfect place to marvel at the vastness of the Andes, where the majesty of nature surrounds you in every direction. A view that will leave you speechless!</p>
+                </div>
+                
+                <h2 class="clh2 centeralin">Salinas and Aguada Blanca National Reserve</h2>
+                <p class="dcrftg_cl">Experience: In the <strong>Salinas and Aguada Blanca National Reserve</strong>, you will witness the natural beauty of the Andes, with vast desert plains that contrast with tranquil saline lagoons. Here, you can spot <strong>vicuñas</strong>, <strong>alpacas</strong>, and <strong>guanacos</strong> in their natural habitat, surrounded by a landscape that seems straight out of another world. If you're seeking serenity, beauty, and a deep connection with nature, this is the ideal place. A paradise for wildlife and photography enthusiasts!</p>
+                
+                <div class="diffapp">
+                    <h2 class="clh2 centeralin">Sabancaya Volcano</h2>
+                    <p class="dcrftg_cl">Experience: <strong>Sabancaya</strong> is not just a volcano, it's an adventure in itself! One of the most active volcanoes in the world, this giant invites you to explore its surroundings while marveling at its imposing power. On guided tours, you can get up close to its volcanic activity, listening to stories about its mystery and destructive force. Feel the thrill of being so close to nature in its purest and most explosive form!</p>
+                </div>
+                
+                <h2 class="clh2 centeralin">Achoma Village</h2>
+                <p class="dcrftg_cl">Experience: In <strong>Achoma</strong>, every street is a lesson in history, and every person is a guardian of traditions. This small village in the Colca Valley, with its <strong>pre-Incan agricultural terraces</strong>, will take you back in time as you learn about ancient farming techniques. The <strong>patron saint festivals</strong> in Achoma, full of music and dance, will immerse you in a unique cultural experience. A hidden corner where life flows to the rhythm of ancient customs!</p>
+                
+                <div class="diffapp">
+                    <h2 class="clh2 centeralin">Traditional Dances in the Colca Valley</h2>
+                    <p class="dcrftg_cl">Experience: Imagine being part of a celebration in the heart of the Andes, where <strong>traditional dances</strong> like <strong>Huayno</strong> invite you to move to the beat of drums and flutes. In <strong>Chivay</strong>, <strong>Yanque</strong>, or <strong>Maca</strong>, the festivities are a spectacle full of colors, music, and emotion. Immerse yourself in a vibrant and festive atmosphere that will make you feel the true essence of the Colca Valley. A carnival of traditions that will excite you!</p>
+                </div>
+                
+
+
+
+
+                <h2 class="clh2 centeralin">Coporaque Village</h2>
+                <p class="dcrftg_cl">Experience: In the small village of <strong>Coporaque</strong>, life flows to the rhythm of nature. Its <strong>agricultural terraces</strong> offer a fascinating glimpse into ancient farming practices, while the <strong>local festivals</strong> fill the streets with music, dance, and joy. Here, tourists have the opportunity to share with the locals and experience firsthand the warmth of the Andean people. A place where every corner has a story to tell!</p>
+                <div class="diffapp">
+                
+                    <h2 class="clh2 centeralin">Andes Viewpoint</h2>
+                    <p class="dcrftg_cl">Experience: The <strong>Andes Viewpoint</strong> is where you will feel on top of the world. With panoramic views of the <strong>Sabancaya</strong>, <strong>Ampato</strong>, and <strong>Hualca Hualca</strong> volcanoes, it is the ideal place to admire the grandeur of the Andes. From here, you can see the contrast between the snow-capped mountains and the green valleys, a landscape that will make you feel small in the face of the vastness of nature. A viewpoint that will take your breath away!</p>
+                </div>
+                
+                <h2 class="clh2 centeralin">Local Culture and Andean Gastronomy</h2>
+                <p class="dcrftg_cl">Experience: The <strong>Colca Valley</strong> will not only surprise you with its landscape, but also with its flavors. From <strong>stuffed rocoto</strong> to <strong>shrimp chupe</strong> and the delicious <strong>Colca trout</strong>, each dish is a feast of tradition and freshness. Additionally, participating in <strong>agritourism</strong> activities will allow you to learn about the cultivation of <strong>potatoes</strong> and <strong>corn</strong>, emblematic products of the region. An opportunity to savor authentic Andean cuisine and take a piece of the local culture home with you!</p>
+                
+        </div>
+
+    </div>
+    <div class="division1" style="width: 50vw; margin: 0px 25vw;"></div>
+    <footer style="background-color: #111326; color: #47b72f;">
+        <p style="background-color: #111326; color: #ffffff !important">&copy; 2024 Colca Canyon Blog</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

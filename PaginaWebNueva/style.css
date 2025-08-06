@@ -1,0 +1,1861 @@
+.crsdd,
+.portada,
+.tldsc_right {
+    filter: saturate(150%)
+}
+
+
+.crsdd h2,
+body {
+    font-family: "Jost", sans-serif;
+    overflow-x: hidden;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+.galery {
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+
+
+
+.msgbvn,
+.portada {
+    flex-direction: column;
+    display: flex
+}
+
+
+
+.portada {
+    position: relative;
+    background: url(/PaginaWebNueva/imagenes/cruz.jpg) center/cover no-repeat fixed;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.portada::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.portada nav,
+.portada_ctn {
+    position: relative;
+    z-index: 2;
+}
+
+.portada nav,
+.portada_ctn {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada_ctn .join {
+    padding: 15px 32px;
+    font-family: "Lato", sans-serif;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+    background-color: #47b72f;
+}
+
+
+
+.msgbvn {
+    text-align: center
+}
+
+.msgbvn h2 {
+    font-size: 60px !important;
+    color: #000;
+    line-height: 1;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.msgbvn p {
+    margin-top: 50px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.portada span,
+.portada h1 {
+
+    font-size: 100px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.portada h4 {
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.portada_ctn {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+
+
+.msgbvn {
+    padding: 60px 0 0 0;
+    align-items: center;
+    justify-content: center
+}
+
+.division {
+    height: 4px;
+    background-color: #1ecd56;
+    border-radius: 50%
+}
+
+.dcpc_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.imgdcpc_1 {
+    display: flex;
+    margin: 0px 0px 150px 0px;
+}
+
+
+
+.tldsc {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+
+
+.tldsc_left h2 {
+    color: white;
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.tldsc_left p {
+    color: white;
+    line-height: 1.4;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.crts {
+    height: auto;
+    padding: 150px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.cardcrts,
+.crsdd {
+    align-items: center;
+    display: flex
+}
+
+.cardcrts {
+    height: 325px;
+    width: 230px;
+    background-color: #e5e7ea;
+    border-radius: 10px;
+    margin: 0 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    flex-direction: column
+}
+
+.cardcrts p {
+    font-size: 18px !important;
+    margin: 10px 0 0;
+    padding: 0
+}
+
+.cardcrts img {
+    height: 80px;
+    width: 80px
+}
+
+.crsdd {
+    height: 50vh;
+    width: 100vw;
+    background-image: url(https://www.peruandeantravel.com/images/southern-peru/colca-canyon-1920-800.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center
+}
+
+.crsdd h2 {
+    font-size: 50px;
+    color: #fff
+}
+
+.galery {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.image-container {
+    width: 33.333333vw;
+    height: 247px;
+    overflow: hidden;
+    position: relative
+}
+
+.image-container h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 5px;
+    font-size: 35px;
+    opacity: 0;
+    transition: opacity .3s;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.galery img {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+    display: block
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+    filter: brightness(50%)
+}
+
+.image-container:hover h4 {
+    opacity: 1
+}
+
+
+
+
+
+.colca_curiosities-carousel {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 25px 25%;
+    margin-bottom: 300px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.carta {
+    flex: 0 0 300px;
+    /* Tamaño de cada carta */
+    background: #f9f9f9;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonscarousel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.carta h4 {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+.carta p {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 14px;
+}
+
+.carousel-btn {
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #1ecd56;
+    width: 250px;
+    color: #fff;
+}
+
+.carousel-btn:hover {
+    background-color: #47b72f;
+}
+
+.carousel-btn.prev {
+    left: 0;
+    bottom: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+    bottom: 0;
+
+}
+
+.colca_curiosities-carousel h2 {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.colca_curiosities-carousel h3 {
+    font-weight: 900;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #1ecd56;
+
+}
+
+footer {
+    width: 100vw;
+    padding: 70px;
+    text-align: center;
+    background-color: #1ecd56;
+}
+
+footer p {
+    color: #000 !important;
+    margin: 0px;
+}
+
+.portadacm {
+    position: relative;
+    background: url('https://muniyanahuara.gob.pe/wp-content/uploads/2020/12/pama-can%CC%83.jpg') center/cover no-repeat fixed;
+    height: 80vh;
+    width: 100vw;
+    color: #fff;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    filter: saturate(150%);
+    overflow: hidden;
+
+}
+
+.portadacm h2 {
+
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    font-size: 150px;
+    line-height: .9
+}
+
+.cabeceracl {
+    text-align: center;
+    padding: 70px;
+    margin: 0 15vw;
+}
+
+.cabeceracl h2 {
+    font-weight: 900;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.cabeceracl iframe {
+    border-radius: 15px;
+}
+
+#map {
+    height: 600px;
+    width: 600px;
+}
+
+.clgroup {
+    display: flex;
+    height: auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clgroup_right {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0px 20px;
+    color: #333;
+    margin-left: 20px;
+}
+
+.travel-steps {
+    list-style-type: decimal;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.travel-steps li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-align: left;
+
+}
+
+.travel-steps li:hover {
+    color: #47b72f;
+    /* Un color azul para resaltar cuando el usuario pasa el cursor */
+}
+
+.info,
+.companies {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #47b72f;
+    border-radius: 5px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.info h2,
+.companies h2 {
+    font-size: 18px;
+    color: #47b72f;
+    margin-bottom: 10px;
+}
+
+.info p,
+.companies ul {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.companies ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.companies ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.companies ul li::before {
+    content: "✔";
+    /* Símbolo de checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #47b72f;
+}
+
+strong {
+    color: #47b72f;
+}
+
+.infocom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.img-container {
+    position: relative;
+    width: 387px;
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+    margin: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.img-container span {
+    position: absolute;
+
+}
+
+.imgdcpc_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.one {
+    background-image: url(/PaginaWebNueva/imagenes/condor_flor.jpg);
+}
+
+.dos {
+    background-image: url(/PaginaWebNueva/imagenes/costumbres.jpg);
+}
+
+.tres {
+    background-image: url(/PaginaWebNueva/imagenes/flora.jpg);
+}
+
+.cuatro {
+    background-image: url(/PaginaWebNueva/imagenes/comida.jpg);
+}
+
+.image-text {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 140px;
+    height: 140px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 50%;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 10px rgb(255, 255, 255);
+    border: 3px solid #1ecd56;
+    font-family: "Montserrat", sans-serif;
+}
+
+.image-text:hover {
+    background-color: #1ecd56;
+    color: #fff;
+}
+
+
+.tldsc_left {
+    width: 50vw;
+    padding: 60px 60px 60px 150px;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tldsc_right {
+    position: relative;
+    background-image: url('https://www.mundomapi.com/images/tours/trekking-al-canon-colca-3-dias-1608324924.jpg');
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.tldsc_right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: 1;
+}
+
+.tldsc_right>* {
+    position: relative;
+    z-index: 2;
+}
+
+/*---------------------------*/
+
+.crtrtcs {
+    width: 100vw;
+    padding: 50px 0px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.crtrtcs h2 {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+
+}
+
+.crtrtcs h3 {
+    font-weight: 900;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #1ecd56;
+
+}
+
+.ctn_crtrtcs {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Para la sección de título */
+.titulo-section {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo mejorado para tarjetas */
+.card {
+    position: relative;
+    width: 350px !important;
+    height: 300px !important;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: none !important;
+    --bs-card-border-radius: none !important;
+    --bs-card-border-color: none !important;
+    background-color: #00000000 !important;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.ctn_crtrtcs1 {
+    text-align: center;
+    border-radius: none !important;
+    width: 420px !important;
+    height: 420px !important;
+    margin: 0px 30px;
+}
+
+.card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
+    z-index: 2;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    background-color: #1ecd56;
+    padding: 10px 30px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+
+}
+
+.card img {
+    width: 420px !important;
+    height: 420px !important;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter 0.3s ease;
+}
+
+.card:hover img {
+    filter: brightness(40%);
+}
+
+.card:hover .card-title {
+    opacity: 0;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    top: 150px;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1ecd56;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.card-content p {
+    font-weight: 30px;
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+/*---------------------------*/
+
+
+.dtscñ {
+    width: 100vw;
+    background-color: #1ecd56;
+    color: #000;
+    margin: 0px;
+
+}
+
+.dtscñ h2,
+span {
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 350px;
+}
+
+.cmlg {
+    width: 60vw;
+    margin: 0px 20vw;
+
+}
+
+
+
+/*Navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #47b72f;
+    padding: 15px 30px;
+    position: relative;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px !important;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.unodos {
+    background-color: #21242200;
+    margin-top: 30px;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 14px;
+    }
+}
+
+
+
+/*Navbar*/
+.dsdaqp {
+    display: flex;
+    box-shadow: 0px 25px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.dsdaqp p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.dsdaqpctn {
+    padding: 35px;
+    width: 50%;
+}
+
+.dtlp {
+    width: 60vw;
+    margin: 50px 20vw;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.dsdaqpch {
+    display: flex;
+    box-shadow: 0px 20px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+}
+
+.dsdaqpch p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.sctctn {
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.clh2 {
+    font-weight: 900;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #1ecd56;
+
+}
+
+.ftg_cl {
+    width: 100vw;
+    background-color: #111326;
+    padding: 50px 0px;
+
+}
+
+.dcrftg_cl {
+    width: 40vw;
+    text-align: center;
+    margin: 40px 30vw;
+    color: white;
+}
+
+.gall_ftg_cl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: 0 15vw;
+    height: auto;
+    justify-content: center;
+}
+
+.img_gall_ftg_cl {
+    width: 361.33px;
+    height: 333px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.img_gall_ftg_cl img {
+    max-height: 100%;
+    height: auto;
+    transition: transform .3s;
+    filter: saturate(150%);
+}
+
+.img_gall_ftg_cl:hover img {
+    transform: scale(1.2);
+    filter: brightness(50%)
+}
+
+.img_gall_ftg_cl:hover h4 {
+    opacity: 1
+}
+
+.img_gall_ftg_cl h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 5px;
+    font-size: 35px;
+    opacity: 0;
+    transition: opacity .3s;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.dtnccl {
+    width: 60%;
+    margin: 0px 20vw;
+    padding: 50px 50px;
+}
+
+.dtnccl h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.dtnccl h2 {
+    font-size: 40px;
+    margin: 20px 0px;
+
+}
+
+.dtnccl h3 {
+    font-size: 25px;
+    margin: 20px 0px;
+
+}
+
+.dtnccl h4 {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.dtnccl h5 {
+    font-size: 18px;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+
+.atracti {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100vw;
+    padding: 0vw 10vw;
+    justify-content: center;
+
+}
+
+.atractictn {
+    width: 450px;
+    height: auto;
+    padding: 25px;
+    background-color: #f3f2f2;
+    margin: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 3px solid #1ecd56;
+}
+
+.atractictn h3 {
+    margin-bottom: 15px;
+}
+
+.centeralin {
+    text-align: center;
+    margin-top: auto;
+}
+
+.diffapp {
+    background-color: #333;
+    padding: 25px 0px;
+    margin: 50px 0px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    margin: 100px 0px 0px 0px;
+}
+
+.chivay {
+    background-image: url('./imagenes/calera.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yanque {
+    background-image: url('./imagenes/yanque.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cabanaconde {
+    background-image: url('./imagenes/cabanaconde.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.maca {
+    background-image: url('./imagenes/maca.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.callali {
+    background-image: url('./imagenes/callali.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sibayo {
+    background-image: url('./imagenes/sibayo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.dtnccl1 {
+    width: 60%;
+    margin: 0px 20vw;
+    padding: 50px 50px 10px 50px;
+}
+
+.dtnccl1 h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.dtnccl1 h2 {
+    font-size: 40px;
+    margin: 20px 0px;
+
+}
+
+.dtnccl1 h3 {
+    font-size: 25px;
+    margin: 20px 0px;
+
+}
+
+.dtnccl1 h4 {
+    font-size: 24px;
+    margin: 20px 0px;
+    font-weight: 500;
+}
+
+.dtnccl1 h5 {
+    font-size: 18px;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+
+.dtnccl1 li {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.dtnccl1 strong {
+    font-weight: 500;
+}
+
+.alingphoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.alingphoto img {
+    width: 100%;
+    height: auto;
+}
+
+
+.cambio_idioma {
+    background-color: #333;
+    border-radius: 15px;
+}
+
+.skiptranslate {
+    width: 80%;
+    text-align: right;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    .portadacm,
+    .portada {
+        height: 50vh;
+        background: url(/PaginaWebNueva/imagenes/cruz.jpg) center center / cover;
+
+    }
+
+    .portadacm {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portadacm h2 {
+        position: relative;
+        top: 0%;
+    }
+
+    .msgbvn {
+        padding: 50px 0px;
+    }
+
+    .tldsc_right {
+        width: 100vw;
+    }
+
+    .crtrtcs {
+        margin: 50px 0px;
+    }
+
+    .ctn_crtrtcs {
+        flex-wrap: wrap;
+
+    }
+
+    .ctn_crtrtcs p {
+        width: 200px;
+    }
+
+    .ctn_crtrtcs1 {
+        margin: 25px;
+    }
+
+    .image-container img {
+        height: 100%;
+    }
+
+    .colca_curiosities {
+        padding: 20px 0px;
+    }
+
+    .carta {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .dtlp {
+        width: 80vw;
+        margin: 25px 10vw 50px 10vw;
+    }
+
+    .cmlg {
+        width: 85vw;
+        margin: 0px 7.5vw;
+    }
+
+    .dcrftg_cl {
+        width: 60vw;
+        margin: 40px 20vw;
+    }
+
+    .gall_ftg_cl {
+        width: 85vw;
+        margin: 0px 7.5vw;
+    }
+
+    .img_gall_ftg_cl {
+        width: 280px;
+    }
+
+    .dtnccl {
+        width: 80vw;
+        margin: 0px 10vw;
+        text-align: center;
+    }
+
+    .atractictn {
+        width: 400px;
+    }
+
+    .atracti {
+        padding: 0px 5vw;
+    }
+
+    .dtnccl p {
+        text-align: center;
+    }
+
+    .dtnccl1 {
+        width: 85vw;
+        margin: 0px 7.5vw;
+    }
+
+    .skiptranslate {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 932px) {
+    .portada {
+        position: relative;
+        background: url(/PaginaWebNueva/imagenes/cruz.jpg) center center / cover;
+        width: 100vw !important;
+        color: #fff;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .menu-toggle {
+        font-size: 60px !important;
+    }
+
+    .navbar {
+        margin: 0 !important;
+        padding: 0 !important;
+        justify-content: flex-end !important;
+    }
+
+    .portada_ctn {
+        position: relative;
+        left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .portada_ctn h1 {
+        font-size: 40px !important;
+        text-align: center;
+        margin-top: 0 !important;
+    }
+
+    .portada_ctn h4 {
+        font-size: 14px;
+        text-align: center;
+        margin: 0px 10%;
+    }
+
+    .dtscñ h2,
+    span {
+        padding: 10px !important;
+    }
+
+    .join {
+        padding: 10px !important;
+        margin-top: 10px !important;
+        font-size: 14px !important;
+    }
+
+    .portada_ctn span {
+        font-size: 40px !important;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    .division1 {
+        display: none;
+    }
+
+    .imgdcpc_1 {
+        flex-wrap: wrap;
+    }
+
+    .msgbvn {
+        padding-bottom: 50px;
+    }
+    .tldsc_left p{
+        font-size: 24px !important;
+    }
+.tldsc_left h2, span{
+    font-size: 36px !important;
+    text-align: center;
+    width: 100%;
+}
+    .img-container {
+        margin: 5px 20px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .tldsc {
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    .tldsc_left {
+        width: 100vw;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .tldsc_right {
+        display: none;
+    }
+
+    .crtrtcs {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ctn_crtrtcs {
+        flex-wrap: wrap;
+    }
+
+    .crtrtcs h2 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .ctn_crtrtcs1 {
+        margin: 15px 25px;
+    }
+
+    .dtscñ h2 {
+        font-size: 50px;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .img-container {
+        margin: 50px 0px !important;
+
+    }
+
+    .image-text {
+        font-size: 16px !important;
+    }
+
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .colca_curiosities {
+        padding: 50px 25px;
+    }
+
+    .carta {
+        margin: 0px;
+    }
+
+    .msgbvn h2,
+    span {
+        font-size: 36px !important;
+    }
+
+    .msgbvn p {
+        margin-top: 25px !important;
+    }
+
+    .portadacm {
+        width: auto;
+        height: 50vh;
+        background: url("https://muniyanahuara.gob.pe/wp-content/uploads/2020/12/pama-can%CC%83.jpg") center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tldsc_right {
+        display: flex;
+    }
+    .portada_ctn {
+        position: relative;
+        left: 0%;
+    }
+
+    .portadacm h2 {
+        font-size: 80px;
+        text-align: center;
+        left: 0px;
+    }
+
+    .cabeceracl {
+        padding: 0px;
+    }
+
+    .dtlp {
+        margin: 50px 5vw;
+        width: 90vw;
+    }
+
+    .cmlg {
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .sctctn {
+        width: 100vw;
+    }
+
+    .clh2 {
+        text-align: center;
+    }
+
+    .dsdaqp {
+        flex-direction: column;
+    }
+
+    .dsdaqpctn {
+        width: 100%;
+        padding: 0px 35px;
+    }
+
+    .dcrftg_cl {
+        width: 90vw;
+        margin: 40px 5vw;
+    }
+
+    .division {
+        width: 100%;
+        margin: 0px !important;
+    }
+
+    .dtnccl {
+        margin: 0px 5vw;
+        width: 90vw;
+        padding: 25px 15px;
+    }
+
+    .dtnccl h1 {
+        font-size: 40px;
+    }
+
+    .texto {
+        font-size: 60px;
+    }
+
+    .dtnccl1 {
+        width: 90vw;
+        margin: 0px 5vw;
+        padding: 0px;
+    }
+
+    .dtnccl1 li {
+        margin-left: 15px;
+        line-height: 1.5;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    .skiptranslate {
+        width: 100vw;
+    }
+    .colca_curiosities-carousel{
+        width: 60% !important;
+        margin: 0 20% !important;
+        padding-bottom: 100px !important;
+    }
+    .colca_curiosities-carousel h2{
+        margin-top: 100px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .portada {
+        width: auto;
+        height: 50vh;
+        background: url(/PaginaWebNueva/imagenes/cruz.jpg) center center / cover;
+
+    }
+
+    .portada_ctn {
+        position: relative;
+        left: 0%;
+    }
+
+    .portada_ctn h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .division1 {
+        display: none;
+    }
+
+    .imgdcpc_1 {
+        flex-wrap: wrap;
+    }
+
+    .msgbvn {
+        padding-bottom: 50px;
+    }
+
+    .img-container {
+        margin: 5px 20px;
+    }
+
+    .tldsc {
+        display: block;
+    }
+
+    .tldsc_left {
+        width: 100vw;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .tldsc_right {
+        display: flex;
+    }
+
+    .crtrtcs {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .ctn_crtrtcs {
+        flex-wrap: wrap;
+    }
+
+    .crtrtcs h2 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .ctn_crtrtcs1 {
+        margin: 15px 25px;
+    }
+
+    .dtscñ h2 {
+        font-size: 50px;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-container img {
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .colca_curiosities {
+        padding: 50px 25px;
+    }
+
+    .carta {
+        margin: 0px;
+    }
+
+
+
+
+    .portadacm {
+        width: auto;
+        height: 50vh;
+        background: url("https://muniyanahuara.gob.pe/wp-content/uploads/2020/12/pama-can%CC%83.jpg") center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portada_ctn {
+        position: relative;
+        left: 0%;
+    }
+
+    .portadacm h2 {
+        font-size: 80px;
+        text-align: center;
+        left: 0px;
+    }
+
+    .cabeceracl {
+        padding: 0px;
+    }
+
+    .dtlp {
+        margin: 50px 5vw;
+        width: 90vw;
+    }
+
+    .cmlg {
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .sctctn {
+        width: 100vw;
+    }
+
+    .clh2 {
+        text-align: center;
+    }
+
+    .dsdaqp {
+        flex-direction: column;
+    }
+
+    .dsdaqpctn {
+        width: 100%;
+        padding: 0px 35px;
+    }
+
+    .dcrftg_cl {
+        width: 90vw;
+        margin: 40px 5vw;
+    }
+
+    .division {
+        width: 100%;
+        margin: 0px !important;
+    }
+
+    .dtnccl {
+        margin: 0px 5vw;
+        width: 90vw;
+        padding: 25px 15px;
+    }
+
+    .dtnccl h1 {
+        font-size: 40px;
+    }
+
+    .texto {
+        font-size: 60px;
+    }
+
+    .dtnccl1 {
+        width: 90vw;
+        margin: 0px 5vw;
+        padding: 0px;
+    }
+
+    .dtnccl1 li {
+        margin-left: 15px;
+        line-height: 1.5;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    .skiptranslate {
+        width: 100vw;
+    }
+}
