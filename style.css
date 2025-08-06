@@ -1291,7 +1291,6 @@ h3 {
 
     .portadacm,
     .portada {
-        height: 50vh;
         background: url(/imagenes/cruz.jpg) center center / cover;
 
     }
@@ -1470,14 +1469,17 @@ h3 {
     .msgbvn {
         padding-bottom: 50px;
     }
-    .tldsc_left p{
-        font-size: 24px !important;
+
+    .tldsc_left p {
+        font-size: 16px !important;
     }
-.tldsc_left h2, span{
-    font-size: 36px !important;
-    text-align: center;
-    width: 100%;
-}
+
+    .tldsc_left h2,
+    span {
+        font-size: 36px !important;
+        text-align: center;
+    }
+
     .img-container {
         margin: 5px 20px;
         width: 350px;
@@ -1568,9 +1570,11 @@ h3 {
         align-items: center;
         justify-content: center;
     }
+
     .tldsc_right {
         display: flex;
     }
+
     .portada_ctn {
         position: relative;
         left: 0%;
@@ -1655,32 +1659,84 @@ h3 {
     .skiptranslate {
         width: 100vw;
     }
-    .colca_curiosities-carousel{
-        width: 60% !important;
-        margin: 0 20% !important;
+
+    .colca_curiosities-carousel {
+        width: 82% !important;
+        margin: 0 9% !important;
         padding-bottom: 100px !important;
     }
-    .colca_curiosities-carousel h2{
+
+    .colca_curiosities-carousel h2 {
         margin-top: 100px !important;
+    }
+
+    .crtrtcs h3 {
+        text-align: center;
+    }
+
+    .crtrtcs h2 {
+        font-size: 30px;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 429px) {
     .portada {
-        width: auto;
-        height: 50vh;
+        position: relative;
         background: url(/imagenes/cruz.jpg) center center / cover;
+        width: 100vw !important;
+        color: #fff;
+        z-index: 0;
+        overflow: hidden;
+    }
 
+    .menu-toggle {
+        font-size: 60px !important;
+    }
+
+    .navbar {
+        margin: 0 !important;
+        padding: 0 !important;
+        justify-content: flex-end !important;
     }
 
     .portada_ctn {
         position: relative;
         left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 
     .portada_ctn h1 {
-        font-size: 80px;
+        font-size: 40px !important;
         text-align: center;
+        margin-top: 0 !important;
+    }
+
+    .portada_ctn h4 {
+        font-size: 14px;
+        text-align: center;
+        margin: 0px 10%;
+    }
+
+    .dtscñ h2,
+    span {
+        padding: 10px !important;
+    }
+
+    .join {
+        padding: 10px !important;
+        margin-top: 10px !important;
+        font-size: 14px !important;
+    }
+
+    .portada_ctn span {
+        font-size: 40px !important;
+        text-align: center;
+        padding: 0px !important;
     }
 
     .division1 {
@@ -1695,12 +1751,25 @@ h3 {
         padding-bottom: 50px;
     }
 
+    .tldsc_left p {
+        font-size: 16px !important;
+    }
+
+    .tldsc_left h2,
+    span {
+        font-size: 36px !important;
+        text-align: center;
+    }
+
     .img-container {
         margin: 5px 20px;
+        width: 350px;
+        height: 350px;
     }
 
     .tldsc {
         display: block;
+        margin-bottom: 0px;
     }
 
     .tldsc_left {
@@ -1710,14 +1779,13 @@ h3 {
     }
 
     .tldsc_right {
-        display: flex;
+        display: none;
     }
 
     .crtrtcs {
         margin-top: 0px;
         display: flex;
         flex-direction: column;
-        width: auto;
     }
 
     .ctn_crtrtcs {
@@ -1725,7 +1793,7 @@ h3 {
     }
 
     .crtrtcs h2 {
-        font-size: 50px;
+        font-size: 30px;
         font-weight: bold;
     }
 
@@ -1743,12 +1811,15 @@ h3 {
 
     .image-container {
         width: 100%;
-        height: 100%;
     }
 
-    .image-container img {
-        width: 100% !important;
-        height: 100%;
+    .img-container {
+        margin: 50px 0px !important;
+
+    }
+
+    .image-text {
+        font-size: 16px !important;
     }
 
     .galery {
@@ -1763,8 +1834,14 @@ h3 {
         margin: 0px;
     }
 
+    .msgbvn h2,
+    span {
+        font-size: 36px !important;
+    }
 
-
+    .msgbvn p {
+        margin-top: 25px !important;
+    }
 
     .portadacm {
         width: auto;
@@ -1773,6 +1850,10 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .tldsc_right {
+        display: flex;
     }
 
     .portada_ctn {
@@ -1858,5 +1939,19 @@ h3 {
 
     .skiptranslate {
         width: 100vw;
+    }
+
+    .colca_curiosities-carousel {
+        width: 80% !important;
+        margin: 0 10% !important;
+        padding-bottom: 100px !important;
+    }
+
+    .colca_curiosities-carousel h2 {
+        margin-top: 100px !important;
+    }
+
+    .crtrtcs h3 {
+        text-align: center !important;
     }
 }
